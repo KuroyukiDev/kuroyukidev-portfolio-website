@@ -1,0 +1,149 @@
+<header>
+	<nav style="elevation: lower; box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0,
+    0, 0, 0.19), 0 0 0 0 rgba(0, 0, 0, 0.2);"
+	     class="navbar navbar-expand-md navbar fixed-top navbar-dark text-info bg-dark mb-4">
+		<div class="container">
+			<a class="navbar-brand" href="/">
+				<img src="/public/images/kuroyukidev-logo.png" width="95" height="38" alt="Kuroyuki Dev
+				Logo">
+			</a>
+			<button
+					class="navbar-toggler border-info text-info"
+					data-toggle="collapse"
+					data-target="#navbarNav">
+				<span class="navbar-toggler-icon text-info"></span>
+			</button>
+			<div class="collapse navbar-collapse"
+			     id="navbarNav">
+				<ul class="navbar-nav text-center">
+					<li class="nav-item">
+						<a class="nav-link h5" href="/">Home</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link h5 dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+						   role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Projects
+						</a>
+						<div class="dropdown-menu bg-dark border-light text-center"
+						     aria-labelledby="navbarDropdownMenuLink">
+							<a class="bg-dark py-2 text-white h5 dropdown-item" href="/category/react">React
+								Projects</a>
+							<a class="bg-dark py-2 text-white h5 dropdown-item" href="/category/nodejs">Node.js
+								Projects</a>
+							<a class="bg-dark py-2 text-white h5 dropdown-item" href="/category/other">My Side
+								Projects</a>
+						</div>
+					</li>
+<!--					<li class="nav-item">-->
+<!--						<a class="nav-link h5" href="#">About Me</a>-->
+<!--					</li>-->
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<main class="mt-4" role="main">
+
+	<div class="py-5 bg-light">
+		<div class="container">
+
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card mt-2 bg-secondary text-light">
+					<div class="card-body">
+						<h1 class="card-title text-center">Node.js Projects</h1>
+						<p class="card-text pb-4 text-white">
+							To the right is my list of projects I created using Node.js
+							and some with Express.js and Handlebars. I've included links to
+							their GitHub Repos, the project live on the web, and a brief
+							description for each web app.
+						</p>
+					</div>
+				</div>
+			</div>
+		<div class="col-md-8">
+			{{#if hasListData}}
+			<div class="d-block w-100">
+				{{#each projectItems}}
+					<div class="card mb-3 mt-2 shadow-sm">
+						<div class="card-body">
+							<h4 class="card-title text-center">{{ this.name }}</h4>
+
+							<div class="container">
+								<div class="row">
+									<a href="{{ this.appUrl }}" target="_blank" class="col-sm btn btn-secondary
+								text-light mr-2 mt-2">View App Live</a>
+									<a href="{{ this.githubRepoUrl }}" target="_blank" class="col-sm btn
+											btn-secondary
+								text-light mr-2 mt-2">View Repo</a>
+									<button
+											class="col-sm btn btn-secondary
+								text-light mr-2 mt-2"
+											data-toggle="collapse"
+											data-target="#{{ this.slug }}">
+										App Description
+									</button>
+								</div>
+								<div class="collapse row mx-1 mt-2" id="{{ this.slug }}">
+									<div class="card card-body border-secondary text-dark pb-1">
+										<p class="h5">{{ this.appDesc }}</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				{{/each}}
+			</div>
+			{{else}}
+				<div class="d-block w-100">
+					<div class="card mb-4 mt-2 shadow-sm">
+						<div class="card-body">
+							<h5 class="card-title text-center">No Node.js projects available yet...</h5>
+							<p class="card-text">
+								Please check back here regularly for any future project
+								postings under this category. Thank you for taking the
+								time to check out my projects.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{/if}}
+		</div>
+	</div>
+
+</main>
+
+<footer class="bg-white text-muted">
+	<div class="container mt-3">
+		<a href="/category/nodejs" class="float-right d-inline"><h5>Back to top <span
+				class="fa fa-arrow-up"></span></h5></a>
+		<div class="btn-group d-inline-flex justify-content-center">
+			<a href="{{twitterLinkUrl}}" target="_blank" class="mx-2 btn btn-light">
+				<img src="{{ twitterLinkIcon }}"
+				     height="69px"
+				     width="69px"
+				     alt="Link to my Indie Game Development Twitter page">
+			</a>
+			<a href="{{patreonLinkUrl}}" target="_blank" class="mx-2 btn btn-light">
+				<img src="{{ patreonLinkIcon }}"
+				     height="69px"
+				     width="69px"
+				     alt="Link to my Official Patreon page for Web App and Game
+				Development">
+			</a>
+			<a href="{{itchioLinkUrl}}" target="_blank" class="mx-2 btn btn-light">
+				<img src="{{ itchioLinkIcon }}"
+				     height="69px"
+				     width="69px"
+				     alt="Link to my Indie Game Development Page at itch.io">
+			</a>
+		</div>
+		<h6 class="mt-1 mb-0 text-center">Updated: <strong>2019年9月7日（土）</strong></h6>
+		<h5 class="mt-0 mb-1 text-center">
+			<span class="fa fa-snowflake text-dark"></span> KuroyukiDev <span class="fa fa-snowflake text-dark"></span>
+		</h5>
+	</div>
+</footer>

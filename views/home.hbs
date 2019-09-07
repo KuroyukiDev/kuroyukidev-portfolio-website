@@ -1,0 +1,147 @@
+<header>
+	<nav style="elevation: lower; box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0,
+    0, 0, 0.19), 0 0 0 0 rgba(0, 0, 0, 0.2);"
+	     class="navbar navbar-expand-md navbar fixed-top navbar-dark text-info bg-dark mb-4">
+		<div class="container">
+			<a class="navbar-brand" href="/">
+				<img src="/public/images/kuroyukidev-logo.png" width="95" height="38" alt="Kuroyuki Dev
+				Logo">
+			</a>
+			<button
+					class="navbar-toggler border-info text-info"
+					data-toggle="collapse"
+					data-target="#navbarNav">
+				<span class="navbar-toggler-icon text-info"></span>
+			</button>
+			<div class="collapse navbar-collapse"
+			     id="navbarNav">
+				<ul class="navbar-nav text-center">
+					<li class="nav-item">
+						<a class="nav-link h5" href="/">Home</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link h5 dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+						   role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Projects
+						</a>
+						<div class="dropdown-menu bg-dark border-light text-center"
+						     aria-labelledby="navbarDropdownMenuLink">
+							<a class="bg-dark py-2 text-white h5 dropdown-item" href="/category/react">React
+								Projects</a>
+							<a class="bg-dark py-2 text-white h5 dropdown-item" href="/category/nodejs">Node.js
+								Projects</a>
+							<a class="bg-dark py-2 text-white h5 dropdown-item" href="/category/other">My Side
+								Projects</a>
+						</div>
+					</li>
+<!--					<li class="nav-item">-->
+<!--						<a class="nav-link h5" href="#">About Me</a>-->
+<!--					</li>-->
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<main class="mt-5" role="main">
+
+	<section class="jumbotron bg-secondary text-light text-center">
+		<div class="container">
+			<h1 class="jumbotron-heading">KuroyukiDev Portfolio</h1>
+			<p class="lead text-white">
+				Hello and welcome to my official portfolio site. My name is Josh Yule
+				and I am an aspiring Web Developer with a passion for JavaScript Frameworks.
+				I coded this website, in Express.js and Handlebars, to showcase the collection
+				projects I've coded myself over the years. Please take some time to sample my work.
+			</p>
+		</div>
+	</section>
+
+	<div class="py-1 bg-light">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card mb-2 shadow-sm">
+						<img src="/public/images/react-category-banner.png"
+						     class="card-img-top img-fluid"
+						     alt="React.js Projects Category Banner with the React.js Logo">
+						<div class="card-body">
+							<h4 class="card-title text-center">My React.js Projects</h4>
+							<p class="card-text">Click the link below to view my React Projects list.</p>
+
+							<a href="/category/react" class="btn btn-info btn-block">View Projects</a>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card mb-2 shadow-sm">
+						<img src="/public/images/nodejs-category-banner.png"
+						     class="card-img-top img-fluid"
+						     alt="Node.js Projects Category Banner with the Node.js Logo">
+						<div class="card-body">
+							<h4 class="card-title text-center">My Node.js and Express.js Projects</h4>
+							<p class="card-text">Click the link below to view my Node.js and Express.js Projects
+								list.</p>
+
+							<a href="/category/nodejs" class="btn btn-info btn-block">View Projects</a>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card mb-2 shadow-sm">
+						<img src="/public/images/side-projects-category-banner.png"
+						     class="card-img-top img-fluid"
+						     alt="Side Projects Category Banner with the the words 'My Side Projects' written
+						      on it.">
+						<div class="card-body">
+							<h4 class="card-title text-center">My Side Projects</h4>
+							<p class="card-text">Click the link below to view my list of Projects that don't
+								fit my "normal" portfolio project categories.
+							</p>
+
+							<a href="/category/other" class="btn btn-info btn-block">View Projects</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</main>
+
+<footer class="bg-white text-muted">
+	<div class="container mt-2">
+		<a href="/" class="float-right d-inline"><h5>Back to top <span
+				class="fa fa-arrow-up"></span></h5></a>
+		<div class="btn-group d-inline-flex justify-content-center">
+			<a href="{{twitterLinkUrl}}" target="_blank" class="mx-2 btn btn-light">
+				<img src="{{ twitterLinkIcon }}"
+				     height="69px"
+				     width="69px"
+				     alt="Link to my Indie Game Development Twitter page">
+			</a>
+			<a href="{{patreonLinkUrl}}" target="_blank" class="mx-2 btn btn-light">
+				<img src="{{ patreonLinkIcon }}"
+				     height="69px"
+				     width="69px"
+				     alt="Link to my Official Patreon page for Web App and Game
+				Development">
+			</a>
+			<a href="{{itchioLinkUrl}}" target="_blank" class="mx-2 btn btn-light">
+				<img src="{{ itchioLinkIcon }}"
+				     height="69px"
+				     width="69px"
+				     alt="Link to my Indie Game Development Page at
+				itch.io">
+			</a>
+		</div>
+		<h6 class="mt-1 mb-0 text-center">Updated: <strong>2019年9月7日（土）</strong></h6>
+		<h5 class="mt-0 mb-1 text-center">
+			<span class="fa fa-snowflake text-dark"></span> KuroyukiDev <span class="fa fa-snowflake text-dark"></span>
+		</h5>
+	</div>
+</footer>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>{{pageTitle}} - Anime Cafe</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <link rel="icon" type="image/png" href="/public/android-icon-192x192.png">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+   <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body id="home-body">
+
+<nav class="navbar navbar-inverse navbar-color-theme">
+   <div class="container-fluid">
+      <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand logo-img" href="/">Anime Cafe</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+         <ul class="nav navbar-nav text-center">
+            <li><a href="/">Home</a></li>
+            <li><a href="/dubbed">Dubbed</a></li>
+            <li class="active"><a href="/donate">Donate</a></li>
+         </ul>
+      </div>
+   </div>
+</nav>
+
+<div class="container-fluid">
+
+   <div class="lead">
+      <h1 class="text-center">{{pageTitle}}</h1>
+      <h3 class="text-center">{{subTitle}}</h3>
+   </div>
+   <div class="row">
+      <div class="col-sm-4">
+
+      </div>
+      <div class="col-sm-4">
+         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_donations" />
+            <input type="hidden" name="business" value="6SPU6NBXAR5SE" />
+            <input type="hidden" name="item_name" value="Web Hosting is expensive. Support my work." />
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="image" src="./../public/images/btn_donateCC_LG.png" style="width: 100%; height: 15%;" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+         </form>
+      </div>
+      <div class="col-sm-4">
+
+      </div>
+   </div>
+
+</div>
+
+</body>
+</html>
