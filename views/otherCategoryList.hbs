@@ -34,9 +34,9 @@
 								Projects</a>
 						</div>
 					</li>
-<!--					<li class="nav-item">-->
-<!--						<a class="nav-link h5" href="#">About Me</a>-->
-<!--					</li>-->
+					<!--					<li class="nav-item">-->
+					<!--						<a class="nav-link h5" href="#">About Me</a>-->
+					<!--					</li>-->
 				</ul>
 			</div>
 		</div>
@@ -48,84 +48,85 @@
 	<div class="py-5 bg-light">
 		<div class="container">
 
-		<div class="row">
-			<div class="col-md-4">
-				<div class="card mt-2 bg-secondary text-light">
-					<div class="card-body">
-						<h2 class="card-title text-center">Side Projects</h2>
-						<p class="card-text pb-2 text-white">
-							Welcome to my list of side projects I've been working on.
-							I've included links to their GitHub Repos if the project
-							has one, the project live or hosted on the web in some way,
-							and a brief description for each web app. These projects
-							don't fall under any of my "normal" portfolio project categories,
-							and this list may include (but not limited to) any of the following
-							topics:
-						</p>
-						<ul class="list-group pb-4 border-dark text-light">
-							<li class="list-group-item bg-secondary border-dark">Indie video game projects</li>
-							<li class="list-group-item bg-secondary border-dark">
-								Projects I created while trying out a different framework or toolset.
-							</li>
-							<li class="list-group-item bg-secondary border-dark">
-								Various other non web development type projects
-							</li>
-						</ul>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card mt-2 bg-secondary text-light">
+						<div class="card-body">
+							<h2 class="card-title text-center">Side Projects</h2>
+							<p class="card-text pb-2 text-white">
+								Welcome to my list of side projects I've been working on.
+								I've included links to their GitHub Repos if the project
+								has one, the project live or hosted on the web in some way,
+								and a brief description for each web app. These projects
+								don't fall under any of my "normal" portfolio project categories,
+								and this list may include (but not limited to) any of the following
+								topics:
+							</p>
+							<ul class="list-group pb-4 border-dark text-light">
+								<li class="list-group-item bg-secondary border-dark">Indie video game projects</li>
+								<li class="list-group-item bg-secondary border-dark">
+									Projects I created while trying out a different framework or toolset.
+								</li>
+								<li class="list-group-item bg-secondary border-dark">
+									Various other non web development type projects
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
-		<div class="col-md-8">
-			{{#if hasListData}}
-			<div class="d-block w-100">
-				{{#each projectItems}}
-					<div class="card mb-3 mt-2 shadow-sm">
-						<div class="card-body">
-							<h4 class="card-title text-center">{{ this.name }}</h4>
+			<div class="col-md-8">
+				{{#if hasListData}}
+				<div class="d-block w-100">
+					{{#each projectItems}}
+						<div class="card mb-3 mt-2 shadow-sm">
+							<div class="card-body">
+								<h4 class="card-title text-center">{{ this.name }}</h4>
 
-							<div class="container">
-								<div class="row">
-									<a href="{{ this.appUrl }}" target="_blank" class="col-sm btn btn-secondary
+								<div class="container">
+									<div class="row">
+										<a href="{{ this.appUrl }}" target="_blank" class="col-sm btn btn-secondary
 								text-light mr-2 mt-2">View App Live</a>
-									<a href="{{ this.githubRepoUrl }}" target="_blank" class="col-sm btn
+										<a href="{{ this.githubRepoUrl }}" target="_blank" class="col-sm btn
 											btn-info
 								text-light mr-2 mt-2">View Repo</a>
-									<button
-											class="col-sm btn btn-secondary
+										<button
+												class="col-sm btn btn-secondary
 								text-light mr-2 mt-2"
-											data-toggle="collapse"
-											data-target="#{{ this.slug }}">
-										App Description
-									</button>
-								</div>
-								<div class="collapse row mx-1 mt-2" id="{{ this.slug }}">
-									<div class="card card-body border-secondary text-dark pb-1">
-										<p class="h5">{{ this.appDesc }}</p>
+												data-toggle="collapse"
+												data-target="#{{ this.slug }}">
+											App Description
+										</button>
+									</div>
+									<div class="collapse row mx-1 mt-2" id="{{ this.slug }}">
+										<div class="card card-body border-secondary text-dark pb-1">
+											<p class="h5">{{ this.appDesc }}</p>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
+
+					{{/each}}
 				</div>
-				{{/each}}
-			</div>
-			{{else}}
-				<div class="d-block w-100">
-					<div class="card mb-4 mt-2 shadow-sm">
-						<div class="card-body">
-							<h5 class="card-title text-center">No projects available here yet...</h5>
-							<p class="card-text">
-								Please check back here regularly for any future project
-								postings under this category. Thank you for taking the
-								time to check out my projects.
-							</p>
+
+				{{else}}
+					<div class="d-block w-100">
+						<div class="card mb-4 mt-2 shadow-sm">
+							<div class="card-body">
+								<h5 class="card-title text-center">No projects available here yet...</h5>
+								<p class="card-text">
+									Please check back here regularly for any future project
+									postings under this category. Thank you for taking the
+									time to check out my projects.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
+				{{/if}}
 			</div>
-			{{/if}}
 		</div>
 	</div>
-
 </main>
 
 <footer class="bg-white text-muted">
@@ -154,7 +155,7 @@
 				itch.io">
 			</a>
 		</div>
-		<h6 class="mt-1 mb-0 text-center">Updated: <strong>2019年9月7日（土）</strong></h6>
+		<h6 class="mt-1 mb-0 text-center">Updated: <strong>2019年9月11日（水）</strong></h6>
 		<h5 class="mt-0 mb-1 text-center">
 			<span class="fa fa-snowflake text-dark"></span> KuroyukiDev <span
 				class="fa fa-snowflake text-dark"></span>

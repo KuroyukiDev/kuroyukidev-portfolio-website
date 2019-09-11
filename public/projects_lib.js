@@ -30,13 +30,17 @@ module.exports.projects = {
 			appUrl: "https://www.dropbox.com/s/7txqz2u6007ival/nodejs-cli-osrs-toolkit-master.zip?dl=0",
 			id: "/category/nodejs/osrstoolkit"
 		},
-		// {
-		//   name: "Temp Title",
-		//   slug: "TempTitle2",
-		//   index: 1,
-		//   appDesc: "A temporary placeholder app description. The Repo Link is to a Live Repo
-		// though.", githubRepoUrl: "https://github.com/KuroyukiDev/expensify-app", appUrl:
-		// "http://ky-expensify.herokuapp.com/", id: "/category/nodejs/temp-url" }
+		{
+			name: "KuroyukiDev Games",
+			slug: "kydevgames",
+			index: 1,
+			appDesc: "The Official Game Development website of KuroyukiDev Games. Designed" +
+				" to serve as a centralized location for download links and info for all" +
+				" our games as well as links to our Official Twitter and Patreon pages.",
+			githubRepoUrl: "https://kydevgames.herokuapp.com/",
+			appUrl: "https://kydevgames.herokuapp.com/",
+			id: "/category/nodejs/kydevgames"
+		},
 	],
 	otherAppsList: [
 		{
@@ -59,6 +63,17 @@ module.exports.projects = {
 			githubRepoUrl: "https://github.com/KuroyukiDev/kydev-recipe-book-app",
 			appUrl: "http://kydev-recipe-book.herokuapp.com/",
 			id: "/category/other/kyrecipebookangularapp"
+		},
+		{
+			name: "KuroyukiDev Games",
+			slug: "kydevgames",
+			index: 2,
+			appDesc: "The Official Game Development website of KuroyukiDev Games. Designed" +
+				" to serve as a centralized location for download links and info for all" +
+				" our games as well as links to our Official Twitter and Patreon pages.",
+			githubRepoUrl: "https://kydevgames.herokuapp.com/",
+			appUrl: "https://kydevgames.herokuapp.com/",
+			id: "/category/nodejs/kydevgames"
 		},
 	]
 };

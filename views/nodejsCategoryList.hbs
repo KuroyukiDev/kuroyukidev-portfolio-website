@@ -64,38 +64,38 @@
 			</div>
 		<div class="col-md-8">
 			{{#if hasListData}}
-			<div class="d-block w-100">
-				{{#each projectItems}}
-					<div class="card mb-3 mt-2 shadow-sm">
-						<div class="card-body">
-							<h4 class="card-title text-center">{{ this.name }}</h4>
+				<div class="d-block w-100">
+					{{#each projectItems}}
+						<div class="card mb-3 mt-2 shadow-sm">
+							<div class="card-body">
+								<h4 class="card-title text-center">{{ this.name }}</h4>
 
-							<div class="container">
-								<div class="row">
-									<a href="{{ this.appUrl }}" target="_blank" class="col-sm btn btn-secondary
+								<div class="container">
+									<div class="row">
+										<a href="{{ this.appUrl }}" target="_blank" class="col-sm btn btn-secondary
 								text-light mr-2 mt-2">View App Live</a>
-									<a href="{{ this.githubRepoUrl }}" target="_blank" class="col-sm btn
+										<a href="{{ this.githubRepoUrl }}" target="_blank" class="col-sm btn
 											btn-info
 								text-light mr-2 mt-2">View Repo</a>
-									<button
-											class="col-sm btn btn-secondary
+										<button
+												class="col-sm btn btn-secondary
 								text-light mr-2 mt-2"
-											data-toggle="collapse"
-											data-target="#{{ this.slug }}">
-										App Description
-									</button>
-								</div>
-								<div class="collapse row mx-1 mt-2" id="{{ this.slug }}">
-									<div class="card card-body border-secondary text-dark pb-1">
-										<p class="h5">{{ this.appDesc }}</p>
+												data-toggle="collapse"
+												data-target="#{{ this.slug }}">
+											App Description
+										</button>
+									</div>
+									<div class="collapse row mx-1 mt-2" id="{{ this.slug }}">
+										<div class="card card-body border-secondary text-dark pb-1">
+											<p class="h5">{{ this.appDesc }}</p>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
+
+					{{/each}}
 				</div>
-				{{/each}}
-			</div>
 			{{else}}
 				<div class="d-block w-100">
 					<div class="card mb-4 mt-2 shadow-sm">
@@ -143,7 +143,7 @@
 				itch.io">
 			</a>
 		</div>
-		<h6 class="mt-1 mb-0 text-center">Updated: <strong>2019年9月7日（土）</strong></h6>
+		<h6 class="mt-1 mb-0 text-center">Updated: <strong>2019年9月11日（水）</strong></h6>
 		<h5 class="mt-0 mb-1 text-center">
 			<span class="fa fa-snowflake text-dark"></span> KuroyukiDev <span
 				class="fa fa-snowflake text-dark"></span>
